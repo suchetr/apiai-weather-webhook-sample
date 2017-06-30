@@ -113,7 +113,7 @@ def makeWebhookResult(data, req):
     parameters = airesult.get("parameters")
     person = parameters.get('Person')
     city = parameters.get("geo-city")
-	condition = condition.get('text')
+    condition = condition.get('text')
     link = generateLink(condition.get('text'), person, city)
     #print(returnedSpeech)
     #print("Response:")
