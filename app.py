@@ -120,8 +120,8 @@ def makeWebhookResult(data, req):
     #print(speech)
 
     return {
-        "speech": "",
-        "displayText": "",
+        "speech": speech,
+        "displayText": speech,
 	"followupEvent": {"name":"user_location_ip", "data":{"travel_to":city,"travel_from":"$travel_from", "link":link,"person":person,"city":city,"condition":condition}},
 	# "data": data,
         # "contextOut": [],
